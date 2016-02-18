@@ -11,12 +11,12 @@ import com.algaworks.cursojpa.modelo.Agenda;
 public class Salvar {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicioCRUD"); 
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("agendaPU"); 
 		EntityManager em = emf.createEntityManager();
 		
 		Agenda agenda = new Agenda();
-		agenda.setNome("Lucas");
-		agenda.setTelefone("77777777777");
+		agenda.setNome("Bruna");
+		agenda.setTelefone("22222222222");
 		agenda.setDataRegistro(new Date());
 		
 		em.getTransaction().begin();

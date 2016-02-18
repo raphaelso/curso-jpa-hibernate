@@ -9,10 +9,10 @@ import com.algaworks.cursojpa.modelo.Agenda;
 public class Remover {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicioCRUD");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("agendaPU");
 		EntityManager em = emf.createEntityManager();
 		
-		Agenda agenda = em.find(Agenda.class, 3L);
+		Agenda agenda = em.find(Agenda.class, 2L);
 		
 		em.getTransaction().begin();
 		em.remove(agenda);
