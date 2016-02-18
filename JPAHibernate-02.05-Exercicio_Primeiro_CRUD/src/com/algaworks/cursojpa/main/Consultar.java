@@ -9,7 +9,7 @@ import com.algaworks.cursojpa.modelo.Agenda;
 public class Consultar {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicioCRUD");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("agendaPU");
 		EntityManager em = emf.createEntityManager();
 		
 		Agenda agenda = em.find(Agenda.class, 3L);
